@@ -135,15 +135,12 @@ class ViewPost: UIViewController, PostDelegate {
 
     @objc func sharePost() {
         if let img = postImage.image {
-            let photo = Photo(image: img, userGenerated: false)
-            let content = PhotoShareContent(photos: [photo])
-            let shareDialog = ShareDialog(content: content)
-            
-            do {
-                try shareDialog.show()
-            } catch {
-                print("Facebook share error \(error)")
-            }
+            let photo = SharePhoto(image: img, userGenerated: false)
+            let content = SharePhotoContent()
+            content.photos = [photo]
+            let shareDialog = ShareDialog(fromViewController: self, content: content, delegate: nil)
+
+            shareDialog.show()
         }
     }
 

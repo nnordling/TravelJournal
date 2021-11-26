@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
 import FirebaseFirestore
 import FirebaseStorage
 import UPCarouselFlowLayout

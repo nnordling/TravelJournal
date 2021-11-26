@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import CoreML
 import Vision
-import Firebase
+import FirebaseCore
 import FirebaseFirestore
 import FirebaseStorage
 import SVProgressHUD
