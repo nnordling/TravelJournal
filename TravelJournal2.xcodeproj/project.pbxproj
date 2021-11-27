@@ -22,6 +22,8 @@
 		13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDD02207CD15002B765E /* Medinah.ttf */; };
 		13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDDB2207DB46002B765E /* Hamilyn.otf */; };
 		13B6DE512200804A00238695 /* ShowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6DE502200804A00238695 /* ShowMap.swift */; };
+		13BA5BD02751A1BF00A19620 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA5BCF2751A1BF00A19620 /* Model.swift */; };
+		13BA5BD22751A5D700A19620 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA5BD12751A5D700A19620 /* UserViewModel.swift */; };
 		13C4BB1021FF2C83008D6BC5 /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C4BB0F21FF2C83008D6BC5 /* NewPost.swift */; };
 		13CE55F121FB082A00F85906 /* ViewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE55F021FB082A00F85906 /* ViewPost.swift */; };
 		7E23826B220DA5A80054B674 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E238269220DA5A80054B674 /* Localizable.strings */; };
@@ -55,6 +57,8 @@
 		13ADBDD02207CD15002B765E /* Medinah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Medinah.ttf; sourceTree = "<group>"; };
 		13ADBDDB2207DB46002B765E /* Hamilyn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hamilyn.otf; sourceTree = "<group>"; };
 		13B6DE502200804A00238695 /* ShowMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMap.swift; sourceTree = "<group>"; };
+		13BA5BCF2751A1BF00A19620 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		13BA5BD12751A5D700A19620 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		13C4BB0F21FF2C83008D6BC5 /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		13CE55F021FB082A00F85906 /* ViewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPost.swift; sourceTree = "<group>"; };
 		7E238268220DA56D0054B674 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				1308834F21F9BF710052050C /* AppDelegate.swift */,
 				7EC316C721FF3DFF00C5A406 /* UltraVisualLayout.swift */,
 				7EAE243B2212CCBF003049B8 /* Model */,
+				13BA5BD32751A5DF00A19620 /* View Model */,
 				7EAE24382212CC3E003049B8 /* Extensions */,
 				7EAE24392212CC65003049B8 /* Controllers */,
 				7EAE243A2212CC90003049B8 /* View */,
@@ -120,6 +125,14 @@
 				7E238269220DA5A80054B674 /* Localizable.strings */,
 			);
 			path = TravelJournal2;
+			sourceTree = "<group>";
+		};
+		13BA5BD32751A5DF00A19620 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				13BA5BD12751A5D700A19620 /* UserViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		7EAE24382212CC3E003049B8 /* Extensions */ = {
@@ -165,6 +178,7 @@
 				13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */,
 				1308835621F9BF710052050C /* TravelJournal2.xcdatamodeld */,
 				13727BB721F9C43D0053CA88 /* TripData.swift */,
+				13BA5BCF2751A1BF00A19620 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Niclas Nordling";
 				TargetAttributes = {
 					1308834B21F9BF710052050C = {
@@ -321,9 +335,11 @@
 				7EC316C621FF3DC300C5A406 /* UIImage + Decompression.swift in Sources */,
 				7EC316C821FF3DFF00C5A406 /* UltraVisualLayout.swift in Sources */,
 				7EAE243D2212CE23003049B8 /* UIViewController + Custom Background.swift in Sources */,
+				13BA5BD22751A5D700A19620 /* UserViewModel.swift in Sources */,
 				13727BB821F9C43D0053CA88 /* TripData.swift in Sources */,
 				1308835021F9BF710052050C /* AppDelegate.swift in Sources */,
 				7E9BB10F21F9ED1700CABAE2 /* TripCollectionViewCell.swift in Sources */,
+				13BA5BD02751A1BF00A19620 /* Model.swift in Sources */,
 				7EC316CD21FF3EEB00C5A406 /* PostCollectionViewCell.swift in Sources */,
 				7EC316CA21FF3E5400C5A406 /* PostsCollectionViewController.swift in Sources */,
 			);
@@ -381,6 +397,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -443,6 +460,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

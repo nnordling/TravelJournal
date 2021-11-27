@@ -48,6 +48,8 @@ class Welcome: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let vm = UserViewModel()
+        vm.fetchData(for: "malek@gmail.com")
         view.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(setupUI), name: UIDevice.orientationDidChangeNotification, object: nil)
@@ -58,6 +60,10 @@ class Welcome: UIViewController {
             //go to my trips directly if user is logged in
             let myTripsViewController = MyTrips()
             self.navigationController?.pushViewController(myTripsViewController, animated: true)
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            print("USER", vm.user)
         }
     }
     
