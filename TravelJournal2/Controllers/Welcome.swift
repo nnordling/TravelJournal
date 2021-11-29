@@ -49,7 +49,7 @@ class Welcome: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let vm = UserViewModel()
-        vm.fetchData(for: "malek@gmail.com")
+        vm.fetchData()
         view.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(setupUI), name: UIDevice.orientationDidChangeNotification, object: nil)

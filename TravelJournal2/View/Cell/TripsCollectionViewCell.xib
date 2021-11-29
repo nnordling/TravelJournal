@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TripsCollectionViewCell" id="gTV-IL-0wX" customClass="TripsCollectionViewCell" customModule="TravelJournal2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="308"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="308"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BUm-0W-jhl">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="308"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-Ke-Pte">
+                        <rect key="frame" x="0.0" y="241" width="355" height="67"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfR-h0-7kd">
+                                <rect key="frame" x="10" y="10" width="335" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021-05-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fic-0r-uBt">
+                                <rect key="frame" x="10" y="40" width="335" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MfR-h0-7kd" secondAttribute="trailing" constant="10" id="47X-gd-vHQ"/>
+                            <constraint firstItem="Fic-0r-uBt" firstAttribute="leading" secondItem="IJM-Ke-Pte" secondAttribute="leading" constant="10" id="AtT-6t-B8M"/>
+                            <constraint firstAttribute="trailing" secondItem="Fic-0r-uBt" secondAttribute="trailing" constant="10" id="B9Q-gf-n4y"/>
+                            <constraint firstItem="MfR-h0-7kd" firstAttribute="leading" secondItem="IJM-Ke-Pte" secondAttribute="leading" constant="10" id="Dxa-YI-M4J"/>
+                            <constraint firstItem="MfR-h0-7kd" firstAttribute="top" secondItem="IJM-Ke-Pte" secondAttribute="top" constant="10" id="ZBu-0n-ewD"/>
+                            <constraint firstItem="Fic-0r-uBt" firstAttribute="top" secondItem="MfR-h0-7kd" secondAttribute="bottom" id="gRM-Xs-qJb"/>
+                            <constraint firstAttribute="bottom" secondItem="Fic-0r-uBt" secondAttribute="bottom" constant="10" id="ppB-sf-Nt1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IJM-Ke-Pte" secondAttribute="bottom" id="5BA-6d-kFf"/>
+                <constraint firstAttribute="bottom" secondItem="BUm-0W-jhl" secondAttribute="bottom" id="Brt-ad-T7k"/>
+                <constraint firstAttribute="trailing" secondItem="IJM-Ke-Pte" secondAttribute="trailing" id="KL7-ZI-tQE"/>
+                <constraint firstItem="BUm-0W-jhl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ruo-XS-azS"/>
+                <constraint firstItem="BUm-0W-jhl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XWy-im-FKV"/>
+                <constraint firstAttribute="trailing" secondItem="BUm-0W-jhl" secondAttribute="trailing" id="hfo-D8-4ki"/>
+                <constraint firstItem="IJM-Ke-Pte" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jJR-KX-Iz0"/>
+            </constraints>
+            <size key="customSize" width="355" height="308"/>
+            <connections>
+                <outlet property="coverImageView" destination="BUm-0W-jhl" id="0jG-tL-vMj"/>
+                <outlet property="textBackgroundView" destination="IJM-Ke-Pte" id="mVx-dE-GeI"/>
+                <outlet property="tripDate" destination="Fic-0r-uBt" id="Qsg-v4-tfV"/>
+                <outlet property="tripTitle" destination="MfR-h0-7kd" id="lrv-oh-4yz"/>
+            </connections>
+            <point key="canvasLocation" x="358.69565217391306" y="232.36607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="background" width="1024" height="682"/>
+    </resources>
+</document>

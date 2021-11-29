@@ -19,6 +19,10 @@
 		13727BBA21F9C5880053CA88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13727BB921F9C5880053CA88 /* GoogleService-Info.plist */; };
 		13727BBC21F9C5CF0053CA88 /* NewTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13727BBB21F9C5CF0053CA88 /* NewTrip.swift */; };
 		13727BC221F9C6560053CA88 /* MyTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13727BC121F9C6560053CA88 /* MyTrips.swift */; };
+		1373AA772754DF3D0034A2F2 /* Trips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1373AA762754DF3D0034A2F2 /* Trips.storyboard */; };
+		1373AA7A2754E1DF0034A2F2 /* TripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373AA782754E1DF0034A2F2 /* TripsCollectionViewCell.swift */; };
+		1373AA7B2754E1DF0034A2F2 /* TripsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1373AA792754E1DF0034A2F2 /* TripsCollectionViewCell.xib */; };
+		1373AA7D2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373AA7C2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift */; };
 		13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDD02207CD15002B765E /* Medinah.ttf */; };
 		13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDDB2207DB46002B765E /* Hamilyn.otf */; };
 		13B6DE512200804A00238695 /* ShowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6DE502200804A00238695 /* ShowMap.swift */; };
@@ -26,6 +30,9 @@
 		13BA5BD22751A5D700A19620 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA5BD12751A5D700A19620 /* UserViewModel.swift */; };
 		13C4BB1021FF2C83008D6BC5 /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C4BB0F21FF2C83008D6BC5 /* NewPost.swift */; };
 		13CE55F121FB082A00F85906 /* ViewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CE55F021FB082A00F85906 /* ViewPost.swift */; };
+		13FD67052754279300150CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13FD67042754279300150CD7 /* Main.storyboard */; };
+		13FD670827543D7100150CD7 /* SignInOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FD670727543D7100150CD7 /* SignInOptionsViewController.swift */; };
+		13FD670A2754CED100150CD7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FD67092754CED100150CD7 /* SignInViewController.swift */; };
 		7E23826B220DA5A80054B674 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E238269220DA5A80054B674 /* Localizable.strings */; };
 		7E9BB10F21F9ED1700CABAE2 /* TripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9BB10D21F9ED1700CABAE2 /* TripCollectionViewCell.swift */; };
 		7E9BB11021F9ED1700CABAE2 /* TripCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E9BB10E21F9ED1700CABAE2 /* TripCollectionViewCell.xib */; };
@@ -54,6 +61,10 @@
 		13727BB921F9C5880053CA88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13727BBB21F9C5CF0053CA88 /* NewTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrip.swift; sourceTree = "<group>"; };
 		13727BC121F9C6560053CA88 /* MyTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrips.swift; sourceTree = "<group>"; };
+		1373AA762754DF3D0034A2F2 /* Trips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trips.storyboard; sourceTree = "<group>"; };
+		1373AA782754E1DF0034A2F2 /* TripsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1373AA792754E1DF0034A2F2 /* TripsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsCollectionViewCell.xib; sourceTree = "<group>"; };
+		1373AA7C2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCompositionalLayout.swift; sourceTree = "<group>"; };
 		13ADBDD02207CD15002B765E /* Medinah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Medinah.ttf; sourceTree = "<group>"; };
 		13ADBDDB2207DB46002B765E /* Hamilyn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hamilyn.otf; sourceTree = "<group>"; };
 		13B6DE502200804A00238695 /* ShowMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMap.swift; sourceTree = "<group>"; };
@@ -61,6 +72,9 @@
 		13BA5BD12751A5D700A19620 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		13C4BB0F21FF2C83008D6BC5 /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
 		13CE55F021FB082A00F85906 /* ViewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPost.swift; sourceTree = "<group>"; };
+		13FD67042754279300150CD7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		13FD670727543D7100150CD7 /* SignInOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOptionsViewController.swift; sourceTree = "<group>"; };
+		13FD67092754CED100150CD7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7E238268220DA56D0054B674 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7E23826A220DA5A80054B674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = TravelJournal2/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7E23826C220DA5AD0054B674 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TravelJournal2/en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -127,6 +141,33 @@
 			path = TravelJournal2;
 			sourceTree = "<group>";
 		};
+		1373AA7F2754E5B20034A2F2 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				1373AA7C2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		1373AA802754E5CA0034A2F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1373AA782754E1DF0034A2F2 /* TripsCollectionViewCell.swift */,
+				1373AA792754E1DF0034A2F2 /* TripsCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1373AA812754E5D50034A2F2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1308835B21F9BF720052050C /* LaunchScreen.storyboard */,
+				13FD67042754279300150CD7 /* Main.storyboard */,
+				1373AA762754DF3D0034A2F2 /* Trips.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		13BA5BD32751A5DF00A19620 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				13B6DE502200804A00238695 /* ShowMap.swift */,
+				13FD670727543D7100150CD7 /* SignInOptionsViewController.swift */,
+				13FD67092754CED100150CD7 /* SignInViewController.swift */,
 				1308835121F9BF710052050C /* Welcome.swift */,
 				13727BBB21F9C5CF0053CA88 /* NewTrip.swift */,
 				13727BC121F9C6560053CA88 /* MyTrips.swift */,
@@ -163,11 +206,13 @@
 		7EAE243A2212CC90003049B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1373AA812754E5D50034A2F2 /* Storyboard */,
+				1373AA7F2754E5B20034A2F2 /* Layout */,
+				1373AA802754E5CA0034A2F2 /* Cell */,
 				7EC316CB21FF3EEB00C5A406 /* PostCollectionViewCell.swift */,
 				7EC316CC21FF3EEB00C5A406 /* PostCollectionViewCell.xib */,
 				7E9BB10D21F9ED1700CABAE2 /* TripCollectionViewCell.swift */,
 				7E9BB10E21F9ED1700CABAE2 /* TripCollectionViewCell.xib */,
-				1308835B21F9BF720052050C /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,11 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1308835D21F9BF720052050C /* LaunchScreen.storyboard in Resources */,
+				1373AA7B2754E1DF0034A2F2 /* TripsCollectionViewCell.xib in Resources */,
 				7E9BB11021F9ED1700CABAE2 /* TripCollectionViewCell.xib in Resources */,
 				1308835A21F9BF720052050C /* Assets.xcassets in Resources */,
 				13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */,
 				13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */,
 				7E23826B220DA5A80054B674 /* Localizable.strings in Resources */,
+				13FD67052754279300150CD7 /* Main.storyboard in Resources */,
+				1373AA772754DF3D0034A2F2 /* Trips.storyboard in Resources */,
 				13727BBA21F9C5880053CA88 /* GoogleService-Info.plist in Resources */,
 				7EC316CE21FF3EEB00C5A406 /* PostCollectionViewCell.xib in Resources */,
 			);
@@ -322,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FD670A2754CED100150CD7 /* SignInViewController.swift in Sources */,
 				1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */,
 				13563691220A1FCA0049E161 /* Extensions.swift in Sources */,
 				13727BC221F9C6560053CA88 /* MyTrips.swift in Sources */,
@@ -332,12 +381,15 @@
 				13210FAD2213EEE6005A65A6 /* ImageClassifier.mlmodel in Sources */,
 				13B6DE512200804A00238695 /* ShowMap.swift in Sources */,
 				13CE55F121FB082A00F85906 /* ViewPost.swift in Sources */,
+				13FD670827543D7100150CD7 /* SignInOptionsViewController.swift in Sources */,
 				7EC316C621FF3DC300C5A406 /* UIImage + Decompression.swift in Sources */,
 				7EC316C821FF3DFF00C5A406 /* UltraVisualLayout.swift in Sources */,
 				7EAE243D2212CE23003049B8 /* UIViewController + Custom Background.swift in Sources */,
+				1373AA7D2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift in Sources */,
 				13BA5BD22751A5D700A19620 /* UserViewModel.swift in Sources */,
 				13727BB821F9C43D0053CA88 /* TripData.swift in Sources */,
 				1308835021F9BF710052050C /* AppDelegate.swift in Sources */,
+				1373AA7A2754E1DF0034A2F2 /* TripsCollectionViewCell.swift in Sources */,
 				7E9BB10F21F9ED1700CABAE2 /* TripCollectionViewCell.swift in Sources */,
 				13BA5BD02751A1BF00A19620 /* Model.swift in Sources */,
 				7EC316CD21FF3EEB00C5A406 /* PostCollectionViewCell.swift in Sources */,

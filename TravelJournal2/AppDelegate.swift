@@ -18,16 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        window = UIWindow(frame: UIScreen.main.bounds)
+//        window = UIWindow(frame: UIScreen.main.bounds)
         
-        let nav = UINavigationController()
-        nav.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        nav.navigationBar.shadowImage = UIImage()
-        nav.navigationBar.tintColor = UIColor.white
-        nav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        nav.viewControllers = [Welcome()]
-        self.window?.rootViewController = nav
-        self.window?.makeKeyAndVisible()
+//        let nav = UINavigationController()
+//        nav.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        nav.navigationBar.shadowImage = UIImage()
+//        nav.navigationBar.tintColor = UIColor.white
+//        nav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+//        nav.viewControllers = [Welcome()]
+//        self.window?.rootViewController = nav
+//        self.window?.makeKeyAndVisible()
         return true
     }
 
