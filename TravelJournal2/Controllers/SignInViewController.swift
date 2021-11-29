@@ -7,11 +7,10 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var backgroundImageView: UIImageView!
-    @IBOutlet weak var infoButton: UIButton!
-    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var usernameTextField: UITextField!
@@ -19,10 +18,13 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .white
 
         signInButton.layer.cornerRadius = signInButton.bounds.height / 2
         errorView.layer.cornerRadius = 10
         errorView.isHidden = true
+
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing)))
     }
     
     @IBAction func openInfoMenu() {
@@ -35,22 +37,28 @@ class SignInViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 
-    @IBAction func closeViewController() {
-        dismiss(animated: true, completion: nil)
-    }
-
     @IBAction func signIn() {
+        guard let email = usernameTextField.text, let password = passwordTextField.text else { return }
 
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+
+            if let error = error {
+                let alert = UIAlertController(title: NSLocalizedString("Login failed", comment: ""), message: "\(error.localizedDescription)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: { _ in
+                    //NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+                print(error)
+
+            } else {
+                self.performSegue(withIdentifier: "segueFromLogin", sender: nil)
+            }
+        }
     }
-    
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SignInViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
     }
-    */
-
 }

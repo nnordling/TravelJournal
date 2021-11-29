@@ -23,6 +23,13 @@ class SignInOptionsViewController: UIViewController {
             guard let button = button as? UIButton else { return }
             button.layer.cornerRadius = button.bounds.height / 2
         }
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(segueToRegister))
+        signUpLabel.addGestureRecognizer(tapGesture)
+    }
+
+    @objc func segueToRegister() {
+        performSegue(withIdentifier: "segueToRegister", sender: nil)
     }
 
 }

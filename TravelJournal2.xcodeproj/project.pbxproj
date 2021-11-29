@@ -12,6 +12,7 @@
 		1308835821F9BF710052050C /* TravelJournal2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1308835621F9BF710052050C /* TravelJournal2.xcdatamodeld */; };
 		1308835A21F9BF720052050C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1308835921F9BF720052050C /* Assets.xcassets */; };
 		1308835D21F9BF720052050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1308835B21F9BF720052050C /* LaunchScreen.storyboard */; };
+		1319F2C927555C2E0064A2A6 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319F2C827555C2E0064A2A6 /* RegisterAccountViewController.swift */; };
 		13210FAD2213EEE6005A65A6 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */; };
 		1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342DC3E2205105F00A57C57 /* EditPost.swift */; };
 		13563691220A1FCA0049E161 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13563690220A1FCA0049E161 /* Extensions.swift */; };
@@ -55,6 +56,7 @@
 		1308835921F9BF720052050C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1308835C21F9BF720052050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1308835E21F9BF720052050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1319F2C827555C2E0064A2A6 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
 		13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		1342DC3E2205105F00A57C57 /* EditPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPost.swift; sourceTree = "<group>"; };
 		13563690220A1FCA0049E161 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				13FD67092754CED100150CD7 /* SignInViewController.swift */,
 				1308835121F9BF710052050C /* Welcome.swift */,
 				1373AA8227550AC40034A2F2 /* TripsCollectionViewController.swift */,
+				1319F2C827555C2E0064A2A6 /* RegisterAccountViewController.swift */,
 				13727BBB21F9C5CF0053CA88 /* NewTrip.swift */,
 				13727BC121F9C6560053CA88 /* MyTrips.swift */,
 				7EC316C921FF3E5400C5A406 /* PostsCollectionViewController.swift */,
@@ -394,6 +397,7 @@
 				13727BB821F9C43D0053CA88 /* TripData.swift in Sources */,
 				1308835021F9BF710052050C /* AppDelegate.swift in Sources */,
 				1373AA7A2754E1DF0034A2F2 /* TripsCollectionViewCell.swift in Sources */,
+				1319F2C927555C2E0064A2A6 /* RegisterAccountViewController.swift in Sources */,
 				7E9BB10F21F9ED1700CABAE2 /* TripCollectionViewCell.swift in Sources */,
 				13BA5BD02751A1BF00A19620 /* Model.swift in Sources */,
 				7EC316CD21FF3EEB00C5A406 /* PostCollectionViewCell.swift in Sources */,
