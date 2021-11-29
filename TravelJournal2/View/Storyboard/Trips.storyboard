@@ -8,6 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main-->
+        <scene sceneID="gmw-Dd-tfp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="z4R-vo-7a1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yJ-AZ-WiS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="-161"/>
+        </scene>
         <!--Trips-->
         <scene sceneID="W9x-mh-koF">
             <objects>
@@ -24,6 +32,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Trips" largeTitleDisplayMode="always" id="L0N-TJ-PMM">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="3jZ-nY-9Ym">
+                            <connections>
+                                <segue destination="z4R-vo-7a1" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="lMw-4f-4TU"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="duK-qW-u5C">
                             <color key="tintColor" red="0.0" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>

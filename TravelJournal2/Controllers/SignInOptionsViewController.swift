@@ -23,8 +23,6 @@ class SignInOptionsViewController: UIViewController {
             guard let button = button as? UIButton else { return }
             button.layer.cornerRadius = button.bounds.height / 2
         }
-
-        print(signInButtonsStackView.arrangedSubviews)
     }
 
 }

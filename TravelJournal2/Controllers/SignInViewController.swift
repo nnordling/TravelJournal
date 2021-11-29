@@ -40,8 +40,7 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func signIn() {
-        navigationController?.viewControllers.removeAll(where: { $0.isKind(of: SignInOptionsViewController.self) })
-        navigationController?.viewControllers.removeAll(where: { $0.isKind(of: SignInViewController.self) })
+
     }
     
     /*
