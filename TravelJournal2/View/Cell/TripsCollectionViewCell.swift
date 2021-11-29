@@ -22,8 +22,10 @@ class TripsCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 25
     }
 
-    func configureContent() {
-
+    func configureContent(for trip: Trip2) {
+        coverImageView.image = UIImage(named: trip.coverImageUrl)
+        tripTitle.text = trip.title
+        tripDate.text = "2021-09-05"
     }
 
     static func nib() -> UINib {

@@ -23,6 +23,7 @@
 		1373AA7A2754E1DF0034A2F2 /* TripsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373AA782754E1DF0034A2F2 /* TripsCollectionViewCell.swift */; };
 		1373AA7B2754E1DF0034A2F2 /* TripsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1373AA792754E1DF0034A2F2 /* TripsCollectionViewCell.xib */; };
 		1373AA7D2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373AA7C2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift */; };
+		1373AA8327550AC40034A2F2 /* TripsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373AA8227550AC40034A2F2 /* TripsCollectionViewController.swift */; };
 		13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDD02207CD15002B765E /* Medinah.ttf */; };
 		13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDDB2207DB46002B765E /* Hamilyn.otf */; };
 		13B6DE512200804A00238695 /* ShowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6DE502200804A00238695 /* ShowMap.swift */; };
@@ -65,6 +66,7 @@
 		1373AA782754E1DF0034A2F2 /* TripsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1373AA792754E1DF0034A2F2 /* TripsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1373AA7C2754E5A70034A2F2 /* TripsCollectionViewCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewCompositionalLayout.swift; sourceTree = "<group>"; };
+		1373AA8227550AC40034A2F2 /* TripsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsCollectionViewController.swift; sourceTree = "<group>"; };
 		13ADBDD02207CD15002B765E /* Medinah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Medinah.ttf; sourceTree = "<group>"; };
 		13ADBDDB2207DB46002B765E /* Hamilyn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hamilyn.otf; sourceTree = "<group>"; };
 		13B6DE502200804A00238695 /* ShowMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMap.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				13FD670727543D7100150CD7 /* SignInOptionsViewController.swift */,
 				13FD67092754CED100150CD7 /* SignInViewController.swift */,
 				1308835121F9BF710052050C /* Welcome.swift */,
+				1373AA8227550AC40034A2F2 /* TripsCollectionViewController.swift */,
 				13727BBB21F9C5CF0053CA88 /* NewTrip.swift */,
 				13727BC121F9C6560053CA88 /* MyTrips.swift */,
 				7EC316C921FF3E5400C5A406 /* PostsCollectionViewController.swift */,
@@ -374,6 +377,7 @@
 				1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */,
 				13563691220A1FCA0049E161 /* Extensions.swift in Sources */,
 				13727BC221F9C6560053CA88 /* MyTrips.swift in Sources */,
+				1373AA8327550AC40034A2F2 /* TripsCollectionViewController.swift in Sources */,
 				1308835821F9BF710052050C /* TravelJournal2.xcdatamodeld in Sources */,
 				1308835221F9BF710052050C /* Welcome.swift in Sources */,
 				13727BBC21F9C5CF0053CA88 /* NewTrip.swift in Sources */,

@@ -40,7 +40,8 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func signIn() {
-        errorView.isHidden = false
+        navigationController?.viewControllers.removeAll(where: { $0.isKind(of: SignInOptionsViewController.self) })
+        navigationController?.viewControllers.removeAll(where: { $0.isKind(of: SignInViewController.self) })
     }
     
     /*
