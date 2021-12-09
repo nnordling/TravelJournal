@@ -51,7 +51,11 @@ class SignInViewController: UIViewController {
                 print(error)
 
             } else {
-                self.performSegue(withIdentifier: "segueFromLogin", sender: nil)
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
+
+                self.view.window?.rootViewController = mainViewController
+                self.view.window?.makeKeyAndVisible()
             }
         }
     }

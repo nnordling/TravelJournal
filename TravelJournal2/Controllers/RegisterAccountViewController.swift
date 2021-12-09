@@ -24,7 +24,6 @@ class RegisterAccountViewController: UIViewController {
         registerButton.layer.cornerRadius = registerButton.bounds.height / 2
 
         view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing)))
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func registerUser() {
@@ -40,6 +39,7 @@ class RegisterAccountViewController: UIViewController {
             print("Invalid Email")
             return
         }
+
         guard password == confirmPassword else {
             print("passwords doesn't match")
             return
@@ -53,21 +53,20 @@ class RegisterAccountViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
 
             } else {
-                self.performSegue(withIdentifier: "segueFromRegister", sender: nil)
+                let changeRequest = user?.user.createProfileChangeRequest()
+                changeRequest?.displayName = username
+                changeRequest?.commitChanges(completion: { error in
+                    print("unable to set display name. Error: \(String(describing: error?.localizedDescription))")
+                })
+
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                let mainViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController
+
+                self.view.window?.rootViewController = mainViewController
+                self.view.window?.makeKeyAndVisible()
             }
         }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
