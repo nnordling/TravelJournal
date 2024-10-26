@@ -1,10 +1,11 @@
 //
-//  UPCarouselFlowLayout.swift
-//  UPCarouselFlowLayoutDemo
+//  UPCarouselFlowLayoutSpacingMode.swift
+//  TravelJournal2
 //
-//  Created by Paul Ulric on 23/06/2016.
-//  Copyright © 2016 Paul Ulric. All rights reserved.
+//  Created by Niclas Nordling on 2024-10-27.
+//  Copyright © 2024 Niclas Nordling. All rights reserved.
 //
+
 
 import UIKit
 
@@ -135,4 +136,3 @@ open class UPCarouselFlowLayout: UICollectionViewFlowLayout {
         return targetContentOffset
     }
 }
-

@@ -27,6 +27,7 @@
 		137D92152CCDAEC100D630C9 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92142CCDAEC100D630C9 /* FacebookLogin */; };
 		137D92172CCDAEC100D630C9 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92162CCDAEC100D630C9 /* FacebookShare */; };
 		137D921A2CCDB48500D630C9 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92192CCDB48500D630C9 /* SVProgressHUD */; };
+		137D921C2CCDB50400D630C9 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137D921B2CCDB50400D630C9 /* UPCarouselFlowLayout.swift */; };
 		13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDD02207CD15002B765E /* Medinah.ttf */; };
 		13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDDB2207DB46002B765E /* Hamilyn.otf */; };
 		13B6DE512200804A00238695 /* ShowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6DE502200804A00238695 /* ShowMap.swift */; };
@@ -60,6 +61,7 @@
 		13727BB921F9C5880053CA88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13727BBB21F9C5CF0053CA88 /* NewTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrip.swift; sourceTree = "<group>"; };
 		13727BC121F9C6560053CA88 /* MyTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrips.swift; sourceTree = "<group>"; };
+		137D921B2CCDB50400D630C9 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		13ADBDD02207CD15002B765E /* Medinah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Medinah.ttf; sourceTree = "<group>"; };
 		13ADBDDB2207DB46002B765E /* Hamilyn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hamilyn.otf; sourceTree = "<group>"; };
 		13B6DE502200804A00238695 /* ShowMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMap.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				7EC316CB21FF3EEB00C5A406 /* PostCollectionViewCell.swift */,
+				137D921B2CCDB50400D630C9 /* UPCarouselFlowLayout.swift */,
 				7EC316CC21FF3EEB00C5A406 /* PostCollectionViewCell.xib */,
 				7E9BB10D21F9ED1700CABAE2 /* TripCollectionViewCell.swift */,
 				7E9BB10E21F9ED1700CABAE2 /* TripCollectionViewCell.xib */,
@@ -213,7 +216,6 @@
 				1308834821F9BF710052050C /* Sources */,
 				1308834921F9BF710052050C /* Frameworks */,
 				1308834A21F9BF710052050C /* Resources */,
-				AE7C423349EFD8CD7D87B8D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,23 +307,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE7C423349EFD8CD7D87B8D9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TravelJournal2/Pods-TravelJournal2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TravelJournal2/Pods-TravelJournal2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelJournal2/Pods-TravelJournal2-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -330,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */,
+				137D921C2CCDB50400D630C9 /* UPCarouselFlowLayout.swift in Sources */,
 				13563691220A1FCA0049E161 /* Extensions.swift in Sources */,
 				13727BC221F9C6560053CA88 /* MyTrips.swift in Sources */,
 				1308835821F9BF710052050C /* TravelJournal2.xcdatamodeld in Sources */,

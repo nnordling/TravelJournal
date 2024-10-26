@@ -145,7 +145,7 @@ class TripData {
                         trip.userEmail = document.data()["userEmail"] as? String ?? ""
                         trip.tripId = document.documentID
                         trip.tripTitle = document.data()["tripTitle"] as? String ?? ""
-                        trip.tripDate = document.data()["tripDate"] as! Date
+                        trip.tripDate = document.data()["tripDate"] as? Date ?? Date()
                         trip.tripImgURL = document.data()["tripImg"] as? String ?? ""
                         
                         self.trips.append(trip)
