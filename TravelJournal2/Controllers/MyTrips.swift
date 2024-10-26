@@ -10,7 +10,6 @@ import UIKit
 import FirebaseCore
 import FirebaseFirestore
 import FirebaseStorage
-import UPCarouselFlowLayout
 import FirebaseAuth
 
 class MyTrips: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, DataDelegate {
