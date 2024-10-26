@@ -9,9 +9,6 @@ target 'TravelJournal2' do
 
 pod 'SVProgressHUD'
 pod 'UPCarouselFlowLayout'
-pod 'FacebookCore'
-pod 'FacebookLogin'
-pod 'FacebookShare'
 
 end
 
