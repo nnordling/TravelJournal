@@ -1,20 +1,16 @@
 PODS:
-  - SVProgressHUD (2.2.5)
   - UPCarouselFlowLayout (1.1.2)
 
 DEPENDENCIES:
-  - SVProgressHUD
   - UPCarouselFlowLayout
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - SVProgressHUD
     - UPCarouselFlowLayout
 
 SPEC CHECKSUMS:
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
 
-PODFILE CHECKSUM: 0f3dcf381aae344163e4119cc2de374b85670e28
+PODFILE CHECKSUM: accd03e9be2a4de0636abcd8f2db1754ecf1ad19
 
 COCOAPODS: 1.15.2

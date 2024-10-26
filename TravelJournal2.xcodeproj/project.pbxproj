@@ -26,6 +26,7 @@
 		137D92132CCDAEC100D630C9 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92122CCDAEC100D630C9 /* FacebookCore */; };
 		137D92152CCDAEC100D630C9 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92142CCDAEC100D630C9 /* FacebookLogin */; };
 		137D92172CCDAEC100D630C9 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92162CCDAEC100D630C9 /* FacebookShare */; };
+		137D921A2CCDB48500D630C9 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92192CCDB48500D630C9 /* SVProgressHUD */; };
 		13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDD02207CD15002B765E /* Medinah.ttf */; };
 		13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDDB2207DB46002B765E /* Hamilyn.otf */; };
 		13B6DE512200804A00238695 /* ShowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6DE502200804A00238695 /* ShowMap.swift */; };
@@ -88,6 +89,7 @@
 				D638CD89D2A8BFEB8DE46701 /* Pods_TravelJournal2.framework in Frameworks */,
 				137D92132CCDAEC100D630C9 /* FacebookCore in Frameworks */,
 				137D92172CCDAEC100D630C9 /* FacebookShare in Frameworks */,
+				137D921A2CCDB48500D630C9 /* SVProgressHUD in Frameworks */,
 				137D920D2CCDAB9C00D630C9 /* FirebaseFirestore in Frameworks */,
 				137D920B2CCDAB9C00D630C9 /* FirebaseCore in Frameworks */,
 				137D920F2CCDAB9C00D630C9 /* FirebaseStorage in Frameworks */,
@@ -251,6 +253,7 @@
 			packageReferences = (
 				137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 			);
 			productRefGroup = 1308834D21F9BF710052050C /* Products */;
 			projectDirPath = "";
@@ -580,6 +583,14 @@
 				minimumVersion = 14.1.0;
 			};
 		};
+		137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -617,6 +628,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookShare;
+		};
+		137D92192CCDB48500D630C9 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 

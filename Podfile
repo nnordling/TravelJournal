@@ -7,7 +7,6 @@ target 'TravelJournal2' do
 
   # Pods for TravelJournal2
 
-pod 'SVProgressHUD'
 pod 'UPCarouselFlowLayout'
 
 end
