@@ -8,10 +8,6 @@ target 'TravelJournal2' do
   # Pods for TravelJournal2
 
 pod 'SVProgressHUD'
-pod 'FirebaseCore'
-pod 'FirebaseFirestore'
-pod 'FirebaseStorage'
-pod 'FirebaseAuth'
 pod 'UPCarouselFlowLayout'
 pod 'FacebookCore'
 pod 'FacebookLogin'
