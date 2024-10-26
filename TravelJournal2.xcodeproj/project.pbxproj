@@ -42,11 +42,9 @@
 		7EC316CA21FF3E5400C5A406 /* PostsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC316C921FF3E5400C5A406 /* PostsCollectionViewController.swift */; };
 		7EC316CD21FF3EEB00C5A406 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC316CB21FF3EEB00C5A406 /* PostCollectionViewCell.swift */; };
 		7EC316CE21FF3EEB00C5A406 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EC316CC21FF3EEB00C5A406 /* PostCollectionViewCell.xib */; };
-		D638CD89D2A8BFEB8DE46701 /* Pods_TravelJournal2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67780BA536D3A382E096593 /* Pods_TravelJournal2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AF1EC0F20F2C662666B9E6A /* Pods-TravelJournal2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJournal2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJournal2/Pods-TravelJournal2.release.xcconfig"; sourceTree = "<group>"; };
 		1308834C21F9BF710052050C /* TravelJournal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJournal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1308834F21F9BF710052050C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1308835121F9BF710052050C /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
@@ -79,8 +77,6 @@
 		7EC316C921FF3E5400C5A406 /* PostsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCollectionViewController.swift; sourceTree = "<group>"; };
 		7EC316CB21FF3EEB00C5A406 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		7EC316CC21FF3EEB00C5A406 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
-		B9FC714A9A7237F1EB6D4CF5 /* Pods-TravelJournal2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJournal2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJournal2/Pods-TravelJournal2.debug.xcconfig"; sourceTree = "<group>"; };
-		D67780BA536D3A382E096593 /* Pods_TravelJournal2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelJournal2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D638CD89D2A8BFEB8DE46701 /* Pods_TravelJournal2.framework in Frameworks */,
 				137D92132CCDAEC100D630C9 /* FacebookCore in Frameworks */,
 				137D92172CCDAEC100D630C9 /* FacebookShare in Frameworks */,
 				137D921A2CCDB48500D630C9 /* SVProgressHUD in Frameworks */,
@@ -108,8 +103,6 @@
 			children = (
 				1308834E21F9BF710052050C /* TravelJournal2 */,
 				1308834D21F9BF710052050C /* Products */,
-				F551CFAB86B9813D867B2F6F /* Pods */,
-				BCC9224A0BA74300DEFF7400 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,23 +181,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BCC9224A0BA74300DEFF7400 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D67780BA536D3A382E096593 /* Pods_TravelJournal2.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F551CFAB86B9813D867B2F6F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B9FC714A9A7237F1EB6D4CF5 /* Pods-TravelJournal2.debug.xcconfig */,
-				0AF1EC0F20F2C662666B9E6A /* Pods-TravelJournal2.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,7 +188,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1308836121F9BF720052050C /* Build configuration list for PBXNativeTarget "TravelJournal2" */;
 			buildPhases = (
-				4276DEF54104EA9B833B7392 /* [CP] Check Pods Manifest.lock */,
 				1308834821F9BF710052050C /* Sources */,
 				1308834921F9BF710052050C /* Frameworks */,
 				1308834A21F9BF710052050C /* Resources */,
@@ -253,9 +228,9 @@
 			);
 			mainGroup = 1308834321F9BF710052050C;
 			packageReferences = (
-				137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
-				137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
+				137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+				137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */,
+				137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD.git" */,
 			);
 			productRefGroup = 1308834D21F9BF710052050C /* Products */;
 			projectDirPath = "";
@@ -283,31 +258,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4276DEF54104EA9B833B7392 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TravelJournal2-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1308834821F9BF710052050C /* Sources */ = {
@@ -487,7 +437,6 @@
 		};
 		1308836221F9BF720052050C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9FC714A9A7237F1EB6D4CF5 /* Pods-TravelJournal2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,7 +458,6 @@
 		};
 		1308836321F9BF720052050C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AF1EC0F20F2C662666B9E6A /* Pods-TravelJournal2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,7 +501,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -561,7 +509,7 @@
 				minimumVersion = 11.4.0;
 			};
 		};
-		137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+		137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
 			requirement = {
@@ -569,7 +517,7 @@
 				minimumVersion = 14.1.0;
 			};
 		};
-		137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+		137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
 			requirement = {
@@ -582,42 +530,42 @@
 /* Begin XCSwiftPackageProductDependency section */
 		137D92082CCDAB9C00D630C9 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseAuth;
 		};
 		137D920A2CCDAB9C00D630C9 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseCore;
 		};
 		137D920C2CCDAB9C00D630C9 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestore;
 		};
 		137D920E2CCDAB9C00D630C9 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseStorage;
 		};
 		137D92122CCDAEC100D630C9 /* FacebookCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */;
 			productName = FacebookCore;
 		};
 		137D92142CCDAEC100D630C9 /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */;
 			productName = FacebookLogin;
 		};
 		137D92162CCDAEC100D630C9 /* FacebookShare */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */;
 			productName = FacebookShare;
 		};
 		137D92192CCDB48500D630C9 /* SVProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			package = 137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD.git" */;
 			productName = SVProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
