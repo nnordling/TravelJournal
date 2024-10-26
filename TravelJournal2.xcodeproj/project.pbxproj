@@ -23,6 +23,9 @@
 		137D920B2CCDAB9C00D630C9 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 137D920A2CCDAB9C00D630C9 /* FirebaseCore */; };
 		137D920D2CCDAB9C00D630C9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 137D920C2CCDAB9C00D630C9 /* FirebaseFirestore */; };
 		137D920F2CCDAB9C00D630C9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 137D920E2CCDAB9C00D630C9 /* FirebaseStorage */; };
+		137D92132CCDAEC100D630C9 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92122CCDAEC100D630C9 /* FacebookCore */; };
+		137D92152CCDAEC100D630C9 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92142CCDAEC100D630C9 /* FacebookLogin */; };
+		137D92172CCDAEC100D630C9 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 137D92162CCDAEC100D630C9 /* FacebookShare */; };
 		13ADBDD32207CD7C002B765E /* Medinah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDD02207CD15002B765E /* Medinah.ttf */; };
 		13ADBDDC2207DB46002B765E /* Hamilyn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13ADBDDB2207DB46002B765E /* Hamilyn.otf */; };
 		13B6DE512200804A00238695 /* ShowMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6DE502200804A00238695 /* ShowMap.swift */; };
@@ -83,9 +86,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D638CD89D2A8BFEB8DE46701 /* Pods_TravelJournal2.framework in Frameworks */,
+				137D92132CCDAEC100D630C9 /* FacebookCore in Frameworks */,
+				137D92172CCDAEC100D630C9 /* FacebookShare in Frameworks */,
 				137D920D2CCDAB9C00D630C9 /* FirebaseFirestore in Frameworks */,
 				137D920B2CCDAB9C00D630C9 /* FirebaseCore in Frameworks */,
 				137D920F2CCDAB9C00D630C9 /* FirebaseStorage in Frameworks */,
+				137D92152CCDAEC100D630C9 /* FacebookLogin in Frameworks */,
 				137D92092CCDAB9C00D630C9 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +250,7 @@
 			mainGroup = 1308834321F9BF710052050C;
 			packageReferences = (
 				137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 1308834D21F9BF710052050C /* Products */;
 			projectDirPath = "";
@@ -565,6 +572,14 @@
 				minimumVersion = 11.4.0;
 			};
 		};
+		137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -587,6 +602,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		137D92122CCDAEC100D630C9 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		137D92142CCDAEC100D630C9 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		137D92162CCDAEC100D630C9 /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
 		};
 /* End XCSwiftPackageProductDependency section */
 
