@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        guard let modelContainer = try? ModelContainer(for: TripModel.self) else { fatalError("unable to set up model container for SwiftData. Blame Malek") }
+        
         FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let hostingController = UIHostingController(rootView: TripsView().modelContext(ModelContext(modelContainer)))
+        let hostingController = UIHostingController(rootView: TripsView().modelContainer(for: TripModel.self))
 
         self.window?.rootViewController = hostingController
         self.window?.makeKeyAndVisible()

@@ -109,7 +109,6 @@ private extension TripsView {
 }
 
 #Preview {
-    let config = ModelConfiguration(isStoredInMemoryOnly: true)
     NavigationStack {
         TripsView()
             .modelContainer(for: TripModel.self, inMemory: true)
@@ -117,7 +116,6 @@ private extension TripsView {
 }
 
 #Preview {
-    let config = ModelConfiguration(isStoredInMemoryOnly: true)
     NavigationStack {
         TripsView()
             .modelContainer(for: TripModel.self, inMemory: true)
