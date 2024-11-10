@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		1308835A21F9BF720052050C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1308835921F9BF720052050C /* Assets.xcassets */; };
 		1308835D21F9BF720052050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1308835B21F9BF720052050C /* LaunchScreen.storyboard */; };
 		13210FAD2213EEE6005A65A6 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */; };
+		132E88962CCE90730048556B /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132E88952CCE90730048556B /* TripModel.swift */; };
 		1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342DC3E2205105F00A57C57 /* EditPost.swift */; };
 		13563691220A1FCA0049E161 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13563690220A1FCA0049E161 /* Extensions.swift */; };
 		13727BB821F9C43D0053CA88 /* TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13727BB721F9C43D0053CA88 /* TripData.swift */; };
@@ -53,6 +54,7 @@
 		1308835C21F9BF720052050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1308835E21F9BF720052050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		132E88952CCE90730048556B /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		1342DC3E2205105F00A57C57 /* EditPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPost.swift; sourceTree = "<group>"; };
 		13563690220A1FCA0049E161 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		13727BB721F9C43D0053CA88 /* TripData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripData.swift; sourceTree = "<group>"; };
@@ -78,6 +80,10 @@
 		7EC316CB21FF3EEB00C5A406 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		7EC316CC21FF3EEB00C5A406 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		13FA8C9E2CE0FC7A00359259 /* Trips */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Trips; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1308834921F9BF710052050C /* Frameworks */ = {
@@ -119,7 +125,8 @@
 			children = (
 				1308834F21F9BF710052050C /* AppDelegate.swift */,
 				7EC316C721FF3DFF00C5A406 /* UltraVisualLayout.swift */,
-				7EAE243B2212CCBF003049B8 /* Model */,
+				13FA8C9E2CE0FC7A00359259 /* Trips */,
+				7EAE243B2212CCBF003049B8 /* Models */,
 				7EAE24382212CC3E003049B8 /* Extensions */,
 				7EAE24392212CC65003049B8 /* Controllers */,
 				7EAE243A2212CC90003049B8 /* View */,
@@ -171,14 +178,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7EAE243B2212CCBF003049B8 /* Model */ = {
+		7EAE243B2212CCBF003049B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				132E88952CCE90730048556B /* TripModel.swift */,
 				13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */,
 				1308835621F9BF710052050C /* TravelJournal2.xcdatamodeld */,
 				13727BB721F9C43D0053CA88 /* TripData.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +203,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				13FA8C9E2CE0FC7A00359259 /* Trips */,
 			);
 			name = TravelJournal2;
 			productName = TravelJournal2;
@@ -228,9 +239,9 @@
 			);
 			mainGroup = 1308834321F9BF710052050C;
 			packageReferences = (
-				137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
-				137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */,
-				137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD.git" */,
+				137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 			);
 			productRefGroup = 1308834D21F9BF710052050C /* Products */;
 			projectDirPath = "";
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132E88962CCE90730048556B /* TripModel.swift in Sources */,
 				1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */,
 				137D921C2CCDB50400D630C9 /* UPCarouselFlowLayout.swift in Sources */,
 				13563691220A1FCA0049E161 /* Extensions.swift in Sources */,
@@ -451,6 +463,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.niclasnordling.TravelJournal2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +485,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.niclasnordling.TravelJournal2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,7 +515,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
+		137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -509,7 +523,7 @@
 				minimumVersion = 11.4.0;
 			};
 		};
-		137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */ = {
+		137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
 			requirement = {
@@ -517,7 +531,7 @@
 				minimumVersion = 14.1.0;
 			};
 		};
-		137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD.git" */ = {
+		137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
 			requirement = {
@@ -530,42 +544,42 @@
 /* Begin XCSwiftPackageProductDependency section */
 		137D92082CCDAB9C00D630C9 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 		137D920A2CCDAB9C00D630C9 /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
 		};
 		137D920C2CCDAB9C00D630C9 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
 		137D920E2CCDAB9C00D630C9 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			package = 137D92072CCDAB9C00D630C9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
 		137D92122CCDAEC100D630C9 /* FacebookCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookCore;
 		};
 		137D92142CCDAEC100D630C9 /* FacebookLogin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
 		};
 		137D92162CCDAEC100D630C9 /* FacebookShare */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk.git" */;
+			package = 137D92112CCDAEC100D630C9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookShare;
 		};
 		137D92192CCDB48500D630C9 /* SVProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD.git" */;
+			package = 137D92182CCDB41400D630C9 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
 			productName = SVProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
