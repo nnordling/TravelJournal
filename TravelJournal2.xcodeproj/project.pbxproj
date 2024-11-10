@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		1308835D21F9BF720052050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1308835B21F9BF720052050C /* LaunchScreen.storyboard */; };
 		13210FAD2213EEE6005A65A6 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */; };
 		132E88962CCE90730048556B /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132E88952CCE90730048556B /* TripModel.swift */; };
+		132E88982CCE90B90048556B /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132E88972CCE90B40048556B /* TripsView.swift */; };
 		1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342DC3E2205105F00A57C57 /* EditPost.swift */; };
 		13563691220A1FCA0049E161 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13563690220A1FCA0049E161 /* Extensions.swift */; };
 		13727BB821F9C43D0053CA88 /* TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13727BB721F9C43D0053CA88 /* TripData.swift */; };
@@ -55,6 +56,7 @@
 		1308835E21F9BF720052050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13210FAC2213EEE6005A65A6 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		132E88952CCE90730048556B /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		132E88972CCE90B40048556B /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		1342DC3E2205105F00A57C57 /* EditPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPost.swift; sourceTree = "<group>"; };
 		13563690220A1FCA0049E161 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		13727BB721F9C43D0053CA88 /* TripData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripData.swift; sourceTree = "<group>"; };
@@ -80,10 +82,6 @@
 		7EC316CB21FF3EEB00C5A406 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		7EC316CC21FF3EEB00C5A406 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		13FA8C9E2CE0FC7A00359259 /* Trips */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Trips; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1308834921F9BF710052050C /* Frameworks */ = {
@@ -125,7 +123,7 @@
 			children = (
 				1308834F21F9BF710052050C /* AppDelegate.swift */,
 				7EC316C721FF3DFF00C5A406 /* UltraVisualLayout.swift */,
-				13FA8C9E2CE0FC7A00359259 /* Trips */,
+				13FA8C9F2CE107D300359259 /* Trips */,
 				7EAE243B2212CCBF003049B8 /* Models */,
 				7EAE24382212CC3E003049B8 /* Extensions */,
 				7EAE24392212CC65003049B8 /* Controllers */,
@@ -138,6 +136,14 @@
 				7E238269220DA5A80054B674 /* Localizable.strings */,
 			);
 			path = TravelJournal2;
+			sourceTree = "<group>";
+		};
+		13FA8C9F2CE107D300359259 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				132E88972CCE90B40048556B /* TripsView.swift */,
+			);
+			path = Trips;
 			sourceTree = "<group>";
 		};
 		7EAE24382212CC3E003049B8 /* Extensions */ = {
@@ -203,9 +209,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				13FA8C9E2CE0FC7A00359259 /* Trips */,
 			);
 			name = TravelJournal2;
 			productName = TravelJournal2;
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132E88982CCE90B90048556B /* TripsView.swift in Sources */,
 				132E88962CCE90730048556B /* TripModel.swift in Sources */,
 				1342DC3F2205105F00A57C57 /* EditPost.swift in Sources */,
 				137D921C2CCDB50400D630C9 /* UPCarouselFlowLayout.swift in Sources */,
